@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="53.0" prefWidth="960.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="41.0" prefHeight="54.0" prefWidth="183.0" text="AIMS STORE" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Segoe UI Black" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane focusTraversable="true" maxHeight="-1.0" maxWidth="-1.0" prefWidth="960.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" ellipsisString="" layoutY="14.0" prefHeight="43.0" prefWidth="960.0" style="&#10;" text="Payment" textAlignment="CENTER" textFill="#0a0a0a" textOverrun="CENTER_ELLIPSIS" wrapText="false" AnchorPane.bottomAnchor="563.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Line endX="-10.5999755859375" endY="7.62939453125E-6" layoutX="339.0" layoutY="93.0" startX="-57.5999755859375" startY="7.62939453125E-6" />
+                  <Text layoutX="218.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="352.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipping" textAlignment="CENTER" wrappingWidth="87.93585205078125">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="531.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="668.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment" textAlignment="CENTER" wrappingWidth="99.7366943359375" AnchorPane.rightAnchor="192.2633056640625">
+                     <font>
+                        <Font name="Segoe UI Semibold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="-10.5999755859375" endY="7.62939453125E-6" layoutX="514.0" layoutY="93.0" startX="-57.5999755859375" startY="7.62939453125E-6" />
+                  <Line endX="-10.5999755859375" endY="7.62939453125E-6" layoutX="662.0" layoutY="93.0" startX="-57.5999755859375" startY="7.62939453125E-6" />
+                  <Text layoutX="409.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Details" textAlignment="CENTER" wrappingWidth="150.4625244140625" AnchorPane.leftAnchor="409.0" AnchorPane.rightAnchor="400.5374755859375">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="347.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Method" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Text>
+                  <CheckBox layoutX="509.0" layoutY="208.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Credit Card">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField fx:id="holderName" layoutX="346.0" layoutY="297.0" prefHeight="26.0" prefWidth="266.0" promptText="Card Holder Name" />
+                  <TextField fx:id="cardNumber" layoutX="346.0" layoutY="337.0" prefHeight="26.0" prefWidth="266.0" promptText="Card Number" />
+                  <TextField fx:id="securityCode" layoutX="532.0" layoutY="375.0" prefHeight="26.0" prefWidth="80.0" promptText="CVC" />
+                  <Button fx:id="btnConfirmPayment" layoutX="347.0" layoutY="438.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="266.0" style="-fx-background-color: #00CCCC;" text="Pay with VNPay" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name=".VnTime" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="bank" layoutX="346.0" layoutY="256.0" prefHeight="26.0" prefWidth="266.0" promptText="Bank" />
+                  <TextField fx:id="month" layoutX="346.0" layoutY="375.0" prefHeight="26.0" prefWidth="90.0" promptText="Month (MM)" />
+                  <TextField fx:id="year" layoutX="448.0" layoutY="375.0" prefHeight="26.0" prefWidth="74.0" promptText="Year (YY)" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

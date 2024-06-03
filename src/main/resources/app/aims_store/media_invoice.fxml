@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="281.0" style="-fx-padding: 10 5 5 5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="hboxMedia" layoutX="14.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="142.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="description" prefHeight="74.0" prefWidth="269.0">
+               <children>
+                  <Label fx:id="title" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="205.0" text="Title of Media" textAlignment="CENTER" textFill="#5091e6" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="42.0" prefWidth="269.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="26.0" prefWidth="23.0" text="x" />
+                        <Label fx:id="numOfProd" prefHeight="26.0" prefWidth="176.0" text="numOfProd">
+                           <font>
+
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="78.0" prefWidth="216.0">
+               <children>
+                  <Label fx:id="labelOutOfStock" prefHeight="44.0" prefWidth="168.0" textFill="#e11111" wrapText="true" />
+               </children>
+            </VBox>
+
+         </children>
+      </HBox>
+      <VBox layoutX="169.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="102.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="price" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="99.0" text="1,200,300" textAlignment="CENTER" textFill="#5091e6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

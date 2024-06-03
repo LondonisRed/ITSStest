@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShippingFormController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-2.0" prefHeight="48.0" prefWidth="1922.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-2.0">
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <GridPane layoutX="83.0" layoutY="4.0" prefHeight="40.0" prefWidth="1838.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="4.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="793.0" minWidth="0.0" prefWidth="210.80917358398438" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1627.3390350341797" minWidth="0.0" prefWidth="1320.1908264160156" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.3994140625" minWidth="0.0" prefWidth="303.090576171875" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="36.0" style="-fx-background-color: black;" GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" style="-fx-background-color: black;" text="Search" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="183.0" style="-fx-background-color: black;" text="AIMS store" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="33.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                         <Image url="@../../images/small-cart-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="885.0" layoutY="91.0" prefHeight="53.0" prefWidth="173.0" text="Shipping" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="883.0" layoutY="155.0" prefHeight="33.0" prefWidth="165.0">
+         <children>
+            <Label layoutX="121.0" layoutY="8.0" text="Shipping">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="8.0" text="Order">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="32.334320068359375" endY="7.62939453125E-6" layoutX="82.0" layoutY="16.0" startX="-25.82196044921875" />
+         </children>
+      </Pane>
+      <Label layoutX="892.0" layoutY="236.0" text="Shipping information">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER" layoutX="694.0" layoutY="283.0" prefHeight="586.0" prefWidth="560.0" AnchorPane.bottomAnchor="211.0" AnchorPane.leftAnchor="694.0" AnchorPane.rightAnchor="666.0" AnchorPane.topAnchor="283.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="87.58819580078125" minHeight="10.0" prefHeight="77.66168212890625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.33831787109375" minHeight="10.0" prefHeight="41.33831787109375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.734527587890625" minHeight="10.0" prefHeight="15.958343505859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.041656494140625" minHeight="10.0" prefHeight="52.041656494140625" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="instructionsField" prefHeight="40.0" prefWidth="560.0" promptText="Shipping Instruction" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="emailField" prefHeight="36.0" prefWidth="560.0" promptText="Email" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="provinceField" prefHeight="0.0" prefWidth="192.0" promptText="Province/City" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addressField" prefHeight="0.0" prefWidth="192.0" promptText="Address" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="name" prefHeight="0.0" prefWidth="96.0" promptText="Name">
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="phone" prefHeight="0.0" prefWidth="96.0" promptText="Phone Number" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+            <CheckBox fx:id="rushDeliveryCheckBox" mnemonicParsing="false" prefHeight="7.0" prefWidth="137.0" text="Rush delivery" GridPane.rowIndex="5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </CheckBox>
+            <GridPane prefHeight="42.0" prefWidth="345.0" GridPane.rowIndex="6">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.85516357421875" minWidth="0.0" prefWidth="358.013671875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="0.0" prefWidth="201.986328125" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="shippingFeeField" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="196.0" text="30.000 vnd" textAlignment="RIGHT" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="16.0" prefWidth="460.0" text="Shipping fee">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <Button fx:id="confirmDeliveryButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="567.0" style="-fx-background-color: #00BCD4;" text="Confirm delivery" GridPane.rowIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
